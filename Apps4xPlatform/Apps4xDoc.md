@@ -55,7 +55,7 @@ Connectors and its types:
 	4. ApiMethod
 	5. Swagger
 
- 
+
 
 we create connectors by selecte the connector first and click the + icon and fill the form like **Name, Image, connectorType**.	
 
@@ -86,7 +86,7 @@ A centralized web-based interface that provides access to multiple apps in one p
  A workspace is your digital work area inside a software, where everything you need is organized, and ready to work.
 
 ### External
-   Intergrate the other Company's or Systems app to our system.
+Intergrate the other Company's or Systems app to our system.
 
 ## Created app
 Click the app we created in the studio (Welcome to Apps4x studio) page and it will redirect to the app settings(config) page.
