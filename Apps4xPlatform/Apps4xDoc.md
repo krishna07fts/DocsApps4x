@@ -55,6 +55,8 @@ Connectors and its types:
 	4. ApiMethod
 	5. Swagger
 
+ 
+
 we create connectors by selecte the connector first and click the + icon and fill the form like **Name, Image, connectorType**.	
 
 
@@ -68,23 +70,23 @@ A centralized web-based interface that provides access to multiple apps in one p
  An apps is like a tool.   
  And the portal is a toolbox - it holds many tools (apps) in one place for easy access.
 
- ### Website
+### Website
  We create websites here.
 
- ### Mobile
+### Mobile
  We create mobile app here.
 
- ### AppApi
+### AppApi
  The AppApi is a backend process, and we create Api apps here.
 
- ### Connectors (Feature now we have)
+### Connectors (Feature now we have)
  A connector is like a bridge that lets our application talk to another system or database.
 
- ### Workspace
+### Workspace
  A workspace is your digital work area inside a software, where everything you need is organized, and ready to work.
 
- ### External
-Intergrate the other Company's or Systems app to our system.
+### External
+   Intergrate the other Company's or Systems app to our system.
 
 ## Created app
 Click the app we created in the studio (Welcome to Apps4x studio) page and it will redirect to the app settings(config) page.
