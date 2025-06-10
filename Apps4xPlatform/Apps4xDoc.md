@@ -54,6 +54,7 @@ Connectors and its types:
 	3. RestApi
 	4. ApiMethod
 	5. Swagger
+
 we create connectors by selecte the connector first and click the + icon and fill the form like **Name, Image, connectorType**.	
 
 
