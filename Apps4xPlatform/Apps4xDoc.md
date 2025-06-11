@@ -142,24 +142,74 @@ Now, when we create a new name or ticket, the newly created entry appears at the
 We can add a single condition or group conditions using operators like AND and OR.  
 Ex: In the My Assigned tickets in the helpdesk its shows the ticket assigned to me only in this place the condition is used.
 
-### Details Form
+### Details Form 
 Click the **Details** Form Id Its goes to the details page there are four tabs **Config, Design, Rules, DataSource**
 
-#### Config
+#### Config (Details Form)
 In the config tab we configure the Show Attach, action custome and view type (ex: list).
 
-#### Design
+#### Design (Details Form)
 Add the fields which is display in the output app create form.
 And there is also a settings icon click the icon and a popup opens and we config the width, height, direction, alignment, lable position, field position(static, absolute, relative), hide lable of the **Create form**.
 
-#### Rules
+#### Rules (Details Form)
 We create rules for Oninit, OnBeforeSubmit and OnAfterSubmit.
 
 _Where is it used?_  
 In the output app, forms can have Rules base dropdowns. For example, if the user selects the "Portal" category, a subcategory dropdown appears. If the user selects the "CRM" category, no subcategory is shown. This is where Rules are used.
 
-#### DataSource
+#### DataSource (Details Form)
 Select the DataSource type as RestApi and select get method then paste the Api. It will give the needed data through by the Api to the Entity's form. And we will get the data by Collections, Entity also by change the DataSource Type.
+
+### Chart Form 
+_How to add chart_   
+
+Step1:  
+	Ex:  
+   For token use this swagger link https://portal.mawarid.com.sa/apps4x-api/swagger/index.html and get login API "/api/v1/auth/login" (a.hyder, 123456, LGE0000001)
+ 
+Step2:   
+	Ex:  
+   Use this swagger link https://portal.mawarid.com.sa/apps4x-api/graph-api/swagger/index.html and search the API to be tested, Now test getmyDepartmentTickets API
+   
+Step3:   
+	1. Create a chart Form  
+	2. **Chart** -  
+	  Enter the Title only, Select the "Type"-"pie" then fill the "Lable" and "Yvalue" -> the "Lable" and "yvalue" keys are in the Api.  
+	3. **DataSource** -  
+	  "Datasource Type :" select "Rest Api", 
+	  "Url & Path :" select "Get" - then paste the api (Ex: {{System.ServerUrl}}/graph-api/api/v1/Integration/getMyDepartmentTickets),
+	  "URL Parameter :" enter  Key - userId, CompanyId  	Value - {{Local.UserId}}, {{Local.CompanyId}},
+	4.Transform - "Response View :" enter "Data".
+
+### Action Form
+Action form used for perform a action like in the helpdesk ticket concepts the ticket has four five action buttons are in the top like Accept, Assign to, Approval, cancel ect.. click the action button and take some action its work based on the configured Conditions and Rules.
+
+#### Config (Action Form)
+Here we configure the condition like AND and OR 
+
+#### Design (Action Form)
+Add the fields which is display in the output app create form.
+And there is also a settings icon click the icon and a popup opens and we config the width, height, direction, alignment, lable position, field position(static, absolute, relative).
+
+#### Rules (Action Form)
+We create rules for Oninit, OnBeforeSubmit and OnAfterSubmit.
+
+### Custom template
+In the Customtemplate we can add the Html, css and js and configure show create, show edit, show delete show export import option, view type and some other configurations.
+
+### Page
+
+The page has several types, but we mainly use the **Tab** and **Form** options. The main purpose of the page is to display multiple forms on a single page.
+
+
+### Menu
+We can add menus and sub menus by clicking the + and we can give permission based on the role and user to the particular menu and sub menus.
+
+### Settings 
+#### User & Role
+We can create users and roles and we assign the user to the role and assign role to the user also.
+
 
 
 
